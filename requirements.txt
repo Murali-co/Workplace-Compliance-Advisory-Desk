@@ -1,0 +1,2 @@
+# Single source for production backend dependency pins.
+-r backend/requirements.txt

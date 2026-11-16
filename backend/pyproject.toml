@@ -1,0 +1,56 @@
+[project]
+name = "workplace-compliance-advisory-desk"
+version = "0.1.0"
+description = "Workplace compliance advisory desk backend services"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi==0.115.6",
+  "uvicorn[standard]==0.34.0",
+  "pydantic==2.10.4",
+  "pydantic-settings==2.7.0",
+  "sqlalchemy[asyncio]==2.0.36",
+  "asyncpg==0.30.0",
+  "psycopg[binary]==3.2.3",
+  "dnspython==2.7.0",
+  "psycopg2-binary==2.9.10",
+  "alembic==1.14.0",
+  "redis==6.1.0",
+  "celery==5.4.0",
+  "httpx==0.28.1",
+  "python-multipart==0.0.20",
+  "python-dateutil==2.9.0.post0",
+  "sentence-transformers==3.3.1",
+  "transformers==4.46.3",
+  "scipy==1.14.1",
+  "scikit-learn==1.5.2",
+  "chromadb==0.6.3",
+  "posthog==3.5.0",
+  "numpy==1.26.4",
+  "langchain==0.3.14",
+  "langchain-community==0.3.14",
+  "langgraph==0.2.60",
+  "prometheus-client==0.21.1",
+  "opentelemetry-api==1.29.0",
+  "opentelemetry-sdk==1.29.0",
+  "opentelemetry-instrumentation-fastapi==0.50b0",
+  "opentelemetry-exporter-otlp==1.29.0",
+  "pytest==8.3.4",
+  "pytest-asyncio==0.25.1",
+  "pytest-mock==3.14.0",
+  "locust==2.32.4",
+]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+[tool.setuptools.packages.find]
+where = ["."]
+include = [
+    "app*",
+    "llm*",
+    "worker*",
+    "prompts*",
+    "ingestion*",
+    "retrieval*"
+]
+namespaces = true

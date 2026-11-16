@@ -1,0 +1,132 @@
+WORKPLACE COMPLIANCE ADVISORY DESK — THREE-PART SOURCE ALLOCATION
+
+86 / 4 = 21.5. Whole files give 43 / 22 / 21: exact 50%, with the closest whole-file quarters. No source file was split or padded.
+Public support files are separate from the source-file percentages.
+The original working application remains unchanged; combine all parts for the full application.
+
+Murali_backend/ — 43 files, 50.00% (target 50%)
+└── backend/
+    ├── app/
+    │   ├── api/
+    │   │   └── v1/
+    │   │       └── endpoints/
+    │   │           ├── feedback.py
+    │   │           ├── health.py
+    │   │           ├── queries.py
+    │   │           └── runs.py
+    │   ├── core/
+    │   │   ├── config.py
+    │   │   ├── database.py
+    │   │   ├── evidence.py
+    │   │   ├── neon_dns.py
+    │   │   ├── outbox.py
+    │   │   ├── outbox_reconcile.py
+    │   │   ├── quarantine.py
+    │   │   ├── security.py
+    │   │   ├── state_machine.py
+    │   │   └── telemetry.py
+    │   ├── main.py
+    │   ├── models/
+    │   │   ├── base.py
+    │   │   └── compliance.py
+    │   └── schemas/
+    │       └── compliance.py
+    ├── ingestion/
+    │   ├── cli.py
+    │   ├── models.py
+    │   └── parser.py
+    ├── llm/
+    │   └── adapter.py
+    ├── migrations/
+    │   ├── env.py
+    │   └── versions/
+    │       ├── 0001_initial.py
+    │       └── 0002_legacy_safety.py
+    ├── retrieval/
+    │   ├── bm25_index.py
+    │   ├── hybrid_search.py
+    │   ├── temporal.py
+    │   └── vector_store.py
+    └── worker/
+        ├── agents/
+        │   ├── accounting.py
+        │   ├── graph.py
+        │   └── schemas.py
+        ├── celery_app.py
+        ├── core/
+        │   └── circuit_breaker.py
+        ├── guardrails/
+        │   ├── input_guard.py
+        │   └── output_guard.py
+        ├── heartbeat.py
+        ├── tasks.py
+        └── tools/
+            ├── corpus_search.py
+            ├── provision_lookup.py
+            ├── related_provision_lookup.py
+            ├── request_fact_lookup.py
+            └── temporal_status_lookup.py
+
+Part2_frontend_operations/ — 22 files, 25.58% (target 25%)
+├── frontend/
+│   ├── index.html
+│   ├── local-workspace.mjs
+│   ├── src/
+│   │   ├── App.jsx
+│   │   ├── index.css
+│   │   └── main.jsx
+│   └── vite.config.js
+├── scripts/
+│   ├── dev_services.py
+│   └── enable_local_demo.py
+└── tests/
+    ├── backend/
+    │   ├── conftest.py
+    │   ├── test_dev_services.py
+    │   ├── test_local_demo_setup.py
+    │   ├── test_neon_dns.py
+    │   ├── test_readiness.py
+    │   ├── test_security_api.py
+    │   ├── test_state_machine.py
+    │   └── test_validation.py
+    ├── frontend/
+    │   ├── browser_check.py
+    │   └── local-workspace.test.mjs
+    ├── integration/
+    │   ├── check_browser_live.py
+    │   ├── check_database.py
+    │   └── verify_local_flows.py
+    └── run.py
+
+Part3_ai_quality/ — 21 files, 24.42% (target 25%)
+├── backend/
+│   └── prompts/
+│       ├── registry.py
+│       ├── v1/
+│       │   ├── research.py
+│       │   └── verification.py
+│       └── v2/
+│           ├── research.py
+│           └── verification.py
+├── scripts/
+│   └── prepare_official_corpus.py
+└── tests/
+    ├── backend/
+    │   ├── load/
+    │   │   └── locustfile.py
+    │   ├── test_agent_graph.py
+    │   ├── test_circuit_breaker.py
+    │   ├── test_engine_safety.py
+    │   ├── test_guardrails.py
+    │   ├── test_hybrid_search.py
+    │   ├── test_ollama_adapter.py
+    │   ├── test_parser.py
+    │   ├── test_response_latency.py
+    │   ├── test_retrieval_safety.py
+    │   └── test_vector_integration.py
+    ├── integration/
+    │   ├── check_live_responses.py
+    │   ├── check_local_boundaries.py
+    │   └── check_ollama.py
+    └── stub/
+        └── main.py

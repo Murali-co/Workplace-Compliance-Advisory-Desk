@@ -1,0 +1,8 @@
+# CPU-only host runtime, including the complete embedding stack.
+--extra-index-url https://download.pytorch.org/whl/cpu
+-r ../tests/requirements.txt
+torch==2.5.1+cpu
+sentence-transformers==3.3.1
+transformers==4.46.3
+scipy==1.14.1
+scikit-learn==1.5.2

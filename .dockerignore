@@ -1,0 +1,20 @@
+**/.venv
+**/node_modules
+**/__pycache__
+**/.pytest_cache
+.git
+.env
+.env.*
+!.env.example
+frontend/dist
+backend/*.egg-info
+tests/**
+!tests/stub/
+!tests/stub/**
+!tests/Dockerfile.stub
+.agents
+.codex
+.aws
+
+# Generated contribution exports; the original source tree is authoritative.
+project_parts/

@@ -1,0 +1,392 @@
+{
+  "metric": "Number of original source-code files (.py, .js, .jsx, .mjs, .css, .html)",
+  "total_source_files": 86,
+  "requested_percentages": [
+    50,
+    25,
+    25
+  ],
+  "rounding_note": "86 / 4 = 21.5. Whole files give 43 / 22 / 21: exact 50%, with the closest whole-file quarters. No source file was split or padded.",
+  "excluded_from_source_counts": [
+    "secrets/private environment files",
+    "dependencies",
+    "generated build/cache/runtime files",
+    "archive files",
+    "PDFs/screenshots",
+    "datasets",
+    "public configuration and documentation"
+  ],
+  "parts": [
+    {
+      "name": "Murali_backend",
+      "description": "Backend API, persistence, execution, retrieval and ingestion",
+      "target_percent": 50,
+      "source_file_count": 43,
+      "actual_percent": 50.0,
+      "files": [
+        {
+          "path": "backend/app/api/v1/endpoints/feedback.py",
+          "sha256": "327da892636bf104bc6c723583442bf2e9c596746f8a038505d7a70e882d8f4e"
+        },
+        {
+          "path": "backend/app/api/v1/endpoints/health.py",
+          "sha256": "80fda38a143c18d2dc12cd969d448000669631b886b5a57002090622fec5b4e1"
+        },
+        {
+          "path": "backend/app/api/v1/endpoints/queries.py",
+          "sha256": "005a448689c5b5fd5ca753a852eefc46b56b9093b2d444c782f76a5fc2646e73"
+        },
+        {
+          "path": "backend/app/api/v1/endpoints/runs.py",
+          "sha256": "169600bbb52506fd1068f92a595408d4c5183872900cd313d88dbbc32adced42"
+        },
+        {
+          "path": "backend/app/core/config.py",
+          "sha256": "f9db5078d12d882f3e6ee9cc2e6e9239ac862ca0d7abc1c11846f9ed572ca91d"
+        },
+        {
+          "path": "backend/app/core/database.py",
+          "sha256": "49d9de80ec4522a27ec84898d72e6d19e9f68b3b7585552815a94e18d7ca1d9a"
+        },
+        {
+          "path": "backend/app/core/evidence.py",
+          "sha256": "9a0d2d131591bedfd8a3b117638af78fc170db9d3184e3389fcd70850955066d"
+        },
+        {
+          "path": "backend/app/core/neon_dns.py",
+          "sha256": "7848c55f8788408ded826d1d91960883434781500a2a0d39045e4181d89010cc"
+        },
+        {
+          "path": "backend/app/core/outbox.py",
+          "sha256": "7585219d3a7b9e3b66d511a9916a9ffd101f44c102bc9994047379a623c5acac"
+        },
+        {
+          "path": "backend/app/core/outbox_reconcile.py",
+          "sha256": "194cb39f9e9649a5c2fb533900f2b29e9a77c3f696bbc0d35059d3159c0dca43"
+        },
+        {
+          "path": "backend/app/core/quarantine.py",
+          "sha256": "abc3494a7233b74ab899f337b7ceb61f286c4e455c7194829dbed121f27160ee"
+        },
+        {
+          "path": "backend/app/core/security.py",
+          "sha256": "4f809bad98c4862134f8cb578d6312e1d82ffd9571b11aa0a0d037dae7654b30"
+        },
+        {
+          "path": "backend/app/core/state_machine.py",
+          "sha256": "f4bc9a006b5f2ee4ccee4187abf2096a4465c02d1cc0a1d491a455500d0f2234"
+        },
+        {
+          "path": "backend/app/core/telemetry.py",
+          "sha256": "4a5be7fccc7eb93a340e3333fe1997e86333b372851ca6e8cbda0a19b2467533"
+        },
+        {
+          "path": "backend/app/main.py",
+          "sha256": "1fcee0646f343d21321ee21591899ef5cc8801e08881af3abafefe52e43531ea"
+        },
+        {
+          "path": "backend/app/models/base.py",
+          "sha256": "cf44e8b8116d114dc396208fb5ac798988570432accf012d884966a3a0e995da"
+        },
+        {
+          "path": "backend/app/models/compliance.py",
+          "sha256": "efa547412e94dcf49bf9df6d3b1fd47894d9e905abd2f3adc6c9a5e22fb093b6"
+        },
+        {
+          "path": "backend/app/schemas/compliance.py",
+          "sha256": "8067268b61dfeed15d50d4d60c9e56484340cd7a2a1b4237d2682cf19b1c71eb"
+        },
+        {
+          "path": "backend/ingestion/cli.py",
+          "sha256": "7fb539b95cb401e2e6572874555046d29e28bdbe9d66eb64cec0d7ef2b3ee1d4"
+        },
+        {
+          "path": "backend/ingestion/models.py",
+          "sha256": "c010647842e1f76523715a329e8e27cedd4978bf55946fbefa05c1555fc5c3fc"
+        },
+        {
+          "path": "backend/ingestion/parser.py",
+          "sha256": "339786eefaf31a47da1492c683f59d8bdf1aceea13b384b93dad39c0ecdd266d"
+        },
+        {
+          "path": "backend/llm/adapter.py",
+          "sha256": "90af253a38aef4ad72de6479946da5643c5e5998b3e118dab20e1b699c33d1f1"
+        },
+        {
+          "path": "backend/migrations/env.py",
+          "sha256": "5b55137992458456e9dfbacdf65c4995d4c86ae08d64f5d7f05ec1fe90ed4c8c"
+        },
+        {
+          "path": "backend/migrations/versions/0001_initial.py",
+          "sha256": "1df936ffa90f43598cab62067a5eefa8768b465b51be7d956fa22c275c8cb805"
+        },
+        {
+          "path": "backend/migrations/versions/0002_legacy_safety.py",
+          "sha256": "0c8cbc74018df515ec7a4dc356d0eab899f5535c63732bf7bc2b2fbf87bf4249"
+        },
+        {
+          "path": "backend/retrieval/bm25_index.py",
+          "sha256": "8f672b5876373a12a33104d4f6a3151032d71b41f3c8a17286f47d04b7ea4952"
+        },
+        {
+          "path": "backend/retrieval/hybrid_search.py",
+          "sha256": "aeb031e9a763309cbc2b58a8b96b6faa13340b21d5575fe522a47da32440f80b"
+        },
+        {
+          "path": "backend/retrieval/temporal.py",
+          "sha256": "aa157768bd6b76bd63d24b78c37aae719129317a4b2e7b70cda441f0b0b399e6"
+        },
+        {
+          "path": "backend/retrieval/vector_store.py",
+          "sha256": "2299b857bc370d516e16a04417c06840a6917bc1a2738416a9e17b4ed5f29434"
+        },
+        {
+          "path": "backend/worker/agents/accounting.py",
+          "sha256": "97174fc4defe387cf5c527213cd07d9754918d1c5950d55ef23485ec5767d1ce"
+        },
+        {
+          "path": "backend/worker/agents/graph.py",
+          "sha256": "fc2903370cd9f8a6c5f150da67275e37fd801e3eca9decb2d607786a0ee9bb0e"
+        },
+        {
+          "path": "backend/worker/agents/schemas.py",
+          "sha256": "e85a834927916d43b12c170e34028c90b93fafc68641ae5a4f24577415a4c5cc"
+        },
+        {
+          "path": "backend/worker/celery_app.py",
+          "sha256": "69a6f82d401a2eefb0d93cda084906908ccdb3eb98b99fcbd1c77df4d3f3a974"
+        },
+        {
+          "path": "backend/worker/core/circuit_breaker.py",
+          "sha256": "1c1ca8d297c07590be018952acc724da85466c1dddca5baa0f004d8f35998cc1"
+        },
+        {
+          "path": "backend/worker/guardrails/input_guard.py",
+          "sha256": "bcd700516fe8284d5bca771012f67f61345f3cca76770d9a1fe050566d831cca"
+        },
+        {
+          "path": "backend/worker/guardrails/output_guard.py",
+          "sha256": "ae7bd4926a1818ebf31a49ba9f2f6dfd3a92625f1deceeac18316a5232af2e17"
+        },
+        {
+          "path": "backend/worker/heartbeat.py",
+          "sha256": "9be91ab4f1058351a844121adff1575b5257fc6a9ebcbca7f3af10bbea40a2df"
+        },
+        {
+          "path": "backend/worker/tasks.py",
+          "sha256": "82277917ed8fab1cac11231c0fbeaa4082675fd83c7a29aa2c1e4d70aef4a06c"
+        },
+        {
+          "path": "backend/worker/tools/corpus_search.py",
+          "sha256": "de95df7ee5356b6fa33948843334543112f40eaf1e29fa63ca714115b7c192cd"
+        },
+        {
+          "path": "backend/worker/tools/provision_lookup.py",
+          "sha256": "8a58000adc115c4a9b50fdbfea352e4a768b818315a75a5bcf965a66933c0338"
+        },
+        {
+          "path": "backend/worker/tools/related_provision_lookup.py",
+          "sha256": "830c63875f878180a1e8d61483b2e6a5d6b976257b9fbc393d7ffd1d0767e9f8"
+        },
+        {
+          "path": "backend/worker/tools/request_fact_lookup.py",
+          "sha256": "a9bf7511838d92d6d335f039eedede6eb382aece7f23c7531c42daa94e856524"
+        },
+        {
+          "path": "backend/worker/tools/temporal_status_lookup.py",
+          "sha256": "6c56ed1f89830b5cb0fabccfeb5810ab9d08e2ba857a4b2e29c95542bde9b7a9"
+        }
+      ]
+    },
+    {
+      "name": "Part2_frontend_operations",
+      "description": "Frontend, local operations and API verification",
+      "target_percent": 25,
+      "source_file_count": 22,
+      "actual_percent": 25.581395,
+      "files": [
+        {
+          "path": "frontend/index.html",
+          "sha256": "7084b25718b2cbd921c001acc9726502acd07c514a2cf0c50f79ad78236d88e0"
+        },
+        {
+          "path": "frontend/local-workspace.mjs",
+          "sha256": "61e7fde63a6484474715bde0a06c8ef62068181c5e3932d82f668f10b689208f"
+        },
+        {
+          "path": "frontend/src/App.jsx",
+          "sha256": "968369ff36f95674810d95451e2572f8c9c4a8bacc16d8575f52d298ef71cc9c"
+        },
+        {
+          "path": "frontend/src/index.css",
+          "sha256": "4f77fd72d95bf5ad4279183b11467f0954f7d899cb858ceb1320d08f0f9eaaf7"
+        },
+        {
+          "path": "frontend/src/main.jsx",
+          "sha256": "acb24feb3540b5ee687f5a65bdbb81fe3644aa19da89256bc24b18d8ee010410"
+        },
+        {
+          "path": "frontend/vite.config.js",
+          "sha256": "be1a60e82133a501abdee246ef6fded7ddf6c6aebe77e4c4be4ea81afbae6b61"
+        },
+        {
+          "path": "scripts/dev_services.py",
+          "sha256": "7ce50eb29a8a38b1ba8d03c758ca9025d8022d2663aea7774f6af2c5d99dcfaa"
+        },
+        {
+          "path": "scripts/enable_local_demo.py",
+          "sha256": "eeca878b80637cf11987e6f0fd168dac39a813c612a18a930bce082331d88dd5"
+        },
+        {
+          "path": "tests/backend/conftest.py",
+          "sha256": "e6238e3faa3d057ec35fb891f79e2835a144f8b6b2f973562ad4ef7de5c911da"
+        },
+        {
+          "path": "tests/backend/test_dev_services.py",
+          "sha256": "ba45746121e0c3369907937998440fe548455947ab117a146d1c69370713850e"
+        },
+        {
+          "path": "tests/backend/test_local_demo_setup.py",
+          "sha256": "9c34134fff34435fd152ff273a0dcdc9910c6f0c1d9a18a100167237882ae8e5"
+        },
+        {
+          "path": "tests/backend/test_neon_dns.py",
+          "sha256": "847e98c411f9306535fb3d381cb38834d92d4adf7ce1cbb50e9d4b73e3a03b21"
+        },
+        {
+          "path": "tests/backend/test_readiness.py",
+          "sha256": "aa1863753e6142f2c34e363addaf77b7193a6fe58da15abd59e4d8f6840bd35e"
+        },
+        {
+          "path": "tests/backend/test_security_api.py",
+          "sha256": "3830a9179afceebac72bd768b9a7d6cd3904f8552d8e8549c3c4bb5ae82def8b"
+        },
+        {
+          "path": "tests/backend/test_state_machine.py",
+          "sha256": "25b12cc2cbbf89645ee88eddaea0db001844c08c3f521ea2afe6cdb72be64423"
+        },
+        {
+          "path": "tests/backend/test_validation.py",
+          "sha256": "d82cd15cf32773329ab7440ccbf8d72add71d05277e7c65853289903cf310aee"
+        },
+        {
+          "path": "tests/frontend/browser_check.py",
+          "sha256": "f85d0ecc3f91938326bfc32fe0b9a07c3eda3865414b30a446554db59c47257e"
+        },
+        {
+          "path": "tests/frontend/local-workspace.test.mjs",
+          "sha256": "bfde69683a7bb1c8839547f84c49c00ff4d02205980184df6c1d7b38aee9e9e8"
+        },
+        {
+          "path": "tests/integration/check_browser_live.py",
+          "sha256": "60512d09587bcd37101d627e16a3ac131640f95ef3f7229bf38088b28323cd39"
+        },
+        {
+          "path": "tests/integration/check_database.py",
+          "sha256": "9e46e3d1f33d7a699e9ac28074e517e15c07d001fcbeafa5bf888b89323b8847"
+        },
+        {
+          "path": "tests/integration/verify_local_flows.py",
+          "sha256": "25b5e467c47a76c5103bf25d6032faeffcdba147bd2993bb1edb429cecef97e4"
+        },
+        {
+          "path": "tests/run.py",
+          "sha256": "5073cd0c18661f9baa72bd7bbc217bb0e16b748f2eac13bb807c8a6102410472"
+        }
+      ]
+    },
+    {
+      "name": "Part3_ai_quality",
+      "description": "Prompts, corpus preparation and AI verification",
+      "target_percent": 25,
+      "source_file_count": 21,
+      "actual_percent": 24.418605,
+      "files": [
+        {
+          "path": "backend/prompts/registry.py",
+          "sha256": "d287475396700bd4fa9a8efda8978fc01a2068a059d3bf254193b66588c97f3e"
+        },
+        {
+          "path": "backend/prompts/v1/research.py",
+          "sha256": "2fa3888273e9ff0ef423e7cb133b6a6a624c97edbc217ac302b31432a95f478e"
+        },
+        {
+          "path": "backend/prompts/v1/verification.py",
+          "sha256": "bf57a91e30bd5ecff08802496c9bbb9234f9f05de07108b79ea5ba67442de994"
+        },
+        {
+          "path": "backend/prompts/v2/research.py",
+          "sha256": "72b3e8383543f9921db6556d80770b72fcce548c6ba7c03c0f576d3639750058"
+        },
+        {
+          "path": "backend/prompts/v2/verification.py",
+          "sha256": "59a276d395afc739c0b9664dc728e12be56b7788a69e30e3016124c4ff036250"
+        },
+        {
+          "path": "scripts/prepare_official_corpus.py",
+          "sha256": "fa495318f18943326bd95fea74d02bf6af6ed18f8b598f6d4bde630cc7ca967c"
+        },
+        {
+          "path": "tests/backend/load/locustfile.py",
+          "sha256": "5c6588d16cd8b8e7622d535b2f40f7209e2f1b1e47fae4b7b23f5119fcb38feb"
+        },
+        {
+          "path": "tests/backend/test_agent_graph.py",
+          "sha256": "30f5ce6d79664d3ba23787b8ee3f58d26237dd1b32468b8dd78e222aa9e07610"
+        },
+        {
+          "path": "tests/backend/test_circuit_breaker.py",
+          "sha256": "a00baf0b83d712943db4365c8175ec6e31ee7c4a5b888364f113b5fd22dfc25b"
+        },
+        {
+          "path": "tests/backend/test_engine_safety.py",
+          "sha256": "c33c2881b4ab76f5cd4b22f9194699cc5a6f36aefb8e31fcf934c7d622205b93"
+        },
+        {
+          "path": "tests/backend/test_guardrails.py",
+          "sha256": "11262392e14780340ba1cb02453bbedac578d7b48246af86901ab22edfd4db2f"
+        },
+        {
+          "path": "tests/backend/test_hybrid_search.py",
+          "sha256": "5f8f88698a1a740de9370bb9f12817067af39d4af332e37cb17812279c62f72c"
+        },
+        {
+          "path": "tests/backend/test_ollama_adapter.py",
+          "sha256": "153a38a5390ba4fc454cc433e31b81b7c580605dbe0d26f280f85a4bdf957202"
+        },
+        {
+          "path": "tests/backend/test_parser.py",
+          "sha256": "ddf05c165816bfd583eeb26f9cfbd6247d7757447d978c52b01b0fe58dd9f83e"
+        },
+        {
+          "path": "tests/backend/test_response_latency.py",
+          "sha256": "3bb2db12c13981ee16854a3fac9107b469cdcd8df4ef7b396e2e6560933af187"
+        },
+        {
+          "path": "tests/backend/test_retrieval_safety.py",
+          "sha256": "b9e94572c53705596fab32c86d6b1275aaac9c894277bdd59d135d63da9d4ac8"
+        },
+        {
+          "path": "tests/backend/test_vector_integration.py",
+          "sha256": "95218dd69f1cec3b56a08ec1687edc2a6b2278c922ec0286d771b467a5a5e389"
+        },
+        {
+          "path": "tests/integration/check_live_responses.py",
+          "sha256": "584cc49f1ae408ccf7f1b42eaf4b2a3d03ba6c257e9263732b08560070efa94d"
+        },
+        {
+          "path": "tests/integration/check_local_boundaries.py",
+          "sha256": "1387220a00ad291256f86f6086fb2e6d87433a164e4d3e4740e6dbbf7ad355f9"
+        },
+        {
+          "path": "tests/integration/check_ollama.py",
+          "sha256": "6d664cbf751f09eeb5456f083775b4fa57acb1ac684f74f171003aa634461b39"
+        },
+        {
+          "path": "tests/stub/main.py",
+          "sha256": "4d189440dc7ba0ab1adff26522aafc091aaa6dea4df20e9e2f667437e6e9e4a0"
+        }
+      ]
+    }
+  ]
+}
