@@ -355,4 +355,16 @@ Managed backend status/stop commands, from the root:
 
 The stop command affects only the launcher's recorded API, worker and scheduler; it does not stop unrelated apps, Docker dependencies or the Ollama daemon.
 
+## Three-part source allocation
+
+The source-file inventory contains 86 files, excluding dependencies, generated artifacts, datasets and public support configuration. Whole-file allocation is:
+
+| Part | Files | Actual share |
+|---|---:|---:|
+| `Murali_backend` | 43 | 50.00% |
+| `Part2_frontend_operations` | 22 | 25.58% |
+| `Part3_ai_quality` | 21 | 24.42% |
+
+Exact 25% quarters would require 21.5 files each, so the remaining whole files are split 22/21. [View the complete tree](docs/code-split.tree.txt) or [the source manifest](docs/code-split.json). Local exports are under `project_parts/` and are ignored by Git. The original application layout remains intact. Part 1 is the requested backend contribution for branch `Murali_backend`; the other two exports remain local. Public support files are additional and do not count toward the source-file ratios.
+
 Backend upload verified: [Murali_backend](https://github.com/Murali-co/MLOPS_Workplace_Compliance_Advisory_Desk/tree/Murali_backend), commit `905ef02`. The published snapshot contains 43 source files plus 16 public support files. The other parts remain local. [Upload receipt](docs/backend-upload.json).
